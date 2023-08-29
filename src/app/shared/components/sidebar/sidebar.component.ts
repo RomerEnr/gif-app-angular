@@ -12,4 +12,8 @@ export class SidebarComponent {
   get tagsHistoryList(): string[] {
     return this.gifsService.tagsHistoryList;
   }
+
+  public searchByClick(tag: string): void {
+    this.gifsService.searchTag(tag);
+  }
 }
